@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: yellow 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        .branding {
+            float: left;
+        }
+
+        .branding h1 {
+            margin: 0;
+            color: yellow;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header a:hover {
+            color: greenyellow;
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 20px;
+            background: #d6d1d1;
+            margin-top: 20px;
+            text-align: center;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .content h2 {
+            color: yellowgreen;
+
+        }
+
+        .content form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-content form input,
+        .main-content form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .main-content form input[type="submit"] {
+            background: #333;
+            color: #fff;
+            border: 0;
+            cursor: pointer;
+        }
+        .button{
+            background-color: yellow;
+            width: 150px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .button{
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: yellowgreen;
+            transition-duration: 3s;
+            transform: perspective(uppercase);
+            color: black;
+            font-style: oblique;
+            font-weight: bold;
+            font-display: unset;
+            font: optional;
+            font-stretch: calc(width);
+        }
+        #home {
+            color: blue;
+            transition: color 0.5s;
+        }
+
+        #home:hover {
+            color: red;
+        }
+
+        .arrow-down {
+            width: 0; 
+            height: 0; 
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid black;
+            margin: 10px auto;
+            transition: border-top-color 0.5s;
+        }
+
+        .arrow-down:hover {
+            border-top-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <h1>PORTFOLIO</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="home.html">Home</a></li>
+                    <li> <a href="about.html">about</a></li>
+                    <li> <a href="portfolio.html">portfolio</a></li>
+                    <li> <a href="services.htm">services</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h2 id="home">Home</h2>
+        <div class="arrow-down"></div>
+    </div>   
+    <div class="content">
+        <h2>Welcome to my portfolio</h2><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            inventore in eveniet, nihil saepe com doloremque, inventore<br>
+            nihil voluptate velit, rem sapiente officia dicta.</p>
+           <a href="about.html"> <input type="submit" value="explore more" class="button"></a>
+    </div>
+    <div class="footer"></div>
+    <div style="background: #333; color: wheat; border-bottom-left-radius: 25px;">
+        <div class="flex" style=" display:flex; justify-content: space-around; padding: 20px;">
+            <div>
+                <h3 style="color: yellow;">Contact Info</h3>
+                <p>Email: patience@gmail.com</p>
+                <p>Phone: +250791391106</p>
+            </div>
+            <div>
+                <h3 style="color: yellow;">Social Media</h3>
+                <p><a href="#" style="color: skyblue;"><i class="fab fa-facebook"></i> Facebook</a></p>
+                <p><a href="#" style="color: skyblue;"><i class="fab fa-instagram"></i> Instagram</a></p>
+            </div>
+            <div>
+                <h3 style="color: yellow">Location</h3>
+                <p>243kn St.</p>
+                <p>kigali, rwanda</p>
+            </div>
+        </div>
+        <p class="footer" style="text-align: center;">&copy; 2025 patience | All Rights Reserved</p>
+    </div>
+
+</body>
+
+</html>

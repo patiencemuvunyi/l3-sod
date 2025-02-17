@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container1 {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header a:hover {
+            color: greenyellow;
+            text-decoration: underline;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        .branding {
+            float: left;
+        }
+
+        .branding h1 {
+            margin: 0;
+            color: yellow;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        .main-content {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+
+        .main-content h2 {
+            color: #333;
+        }
+
+        .main-content form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-content form input,
+        .main-content form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .main-content form input[type="submit"] {
+            background: #333;
+            color: #fff;
+            border: 0;
+            cursor: pointer;
+        }
+
+        .conta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 500px;
+            background-color: gray;
+        }
+        
+        .header h4 {
+            color: skyblue;
+            padding-left: 15px;
+            text-indent: 20px;
+            font-weight: bold;
+            font-style: oblique;
+            font-size: 20px;
+
+        }
+
+        .header {
+            display: flex;
+            border-radius: 10px;
+        }
+
+        .link ul li {
+            display: inline;
+            padding-left: 15px;
+        }
+
+        .link {
+            position: absolute;
+            right: 20px;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(227, 255, 47);
+
+        }
+
+        .header {
+            display: flex;
+        }
+
+        .link ul li {
+            display: inline;
+            padding-left: 15px;
+        }
+
+        .link {
+            position: absolute;
+            right: 20px;
+        }
+
+        .abb {
+            padding-left: 100px;
+            justify-content: flex-start;
+
+        }
+
+        .par {
+            content: "";
+            text-shadow: 10px 15px 5px greenyellow;
+            color: black;
+            gap: 20px;
+            text-decoration: underline;
+            text-size-adjust: 100PX;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            justify-content: space-between;
+        }
+
+        .foo {
+            background-color: skyblue;
+            width: auto;
+            height: 50px;
+            text-align: center;
+            text-overflow: ellipsis;
+            justify-content: space-between;
+        }
+
+        .phot {
+            height: 220px;
+            width: 250px;
+            border-radius: 800px;
+        }
+
+        .abut {
+            padding-left: 25px;
+        }
+
+        .abut h3 {
+            padding-left: 20px;
+            font-size: x-large;
+            color: greenyellow;
+            font-family: arial, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+
+        }
+
+        .field {
+            color: skyblue;
+            width: 10px;
+            background-color: black;
+            border-radius: 50px;
+            justify-content: center;
+        }
+
+        .name {
+            background-color: rgb(22, 16, 5);
+            border-radius: 15px;
+            width: 180px;
+            padding-left: 10px;
+
+        }
+
+        .side {
+            padding-left: 30px;
+        }
+
+        .set,
+
+        .field4 {
+            display: flex;
+            width: 250PX;
+            padding-left: 15PX;
+            height: 199px;
+            background-color: rgb(22, 16, 5);
+            border-radius: 15px;
+            margin-left: 29Px;
+            flex-direction: column-reverse;
+            display: flex;
+            direction: inherit;
+
+
+        }
+
+        .field4 {
+            flex: 1;
+
+
+
+        }
+
+        .header ul li a {
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .header ul li a:hover {
+            color: black;
+            background-color: white;
+            border-radius: 50px;
+            box-shadow: 15px 10px 15px;
+        }
+
+
+
+        .field5 {
+            flex: 1;
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            float: left;
+
+            border-radius: 8px;
+            padding: 10px;
+            padding-top: 0px;
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .set h3 {
+            color: green;
+            font-style: oblique;
+
+        }
+        .set{
+            height: 250px;
+        }
+
+        .set p span,
+        .field4 h3,
+        .field5 h3 {
+            font-style: oblique;
+            text-decoration: hotpink;
+            font-size: larger;
+        }
+
+        .col {
+            background-image: url(wait.png);
+            background-size: cover;
+            display: flex;
+        }
+
+        .education h3 {
+            color: green;
+        }
+
+        .header h4 {
+            color: rgba(255, 145, 0, 0.823);
+            padding-left: 15px;
+            text-indent: 20px;
+            font-weight: bold;
+            font-style: oblique;
+            font-size: 20px;
+
+        }
+
+        .header {
+            display: flex;
+            border-radius: 10px;
+        }
+
+        .link ul li {
+            display: inline;
+            padding-left: 15px;
+        }
+
+        .link {
+            position: absolute;
+            right: 20px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            padding-top: 15px;
+            padding-left: 10px;
+        }
+
+        .level {
+            background-color: greenyellow;
+        }
+
+        .level p span {
+            text-align: start;
+            padding-top: 110px;
+        }
+
+        .html {
+            color: green;
+        }
+
+        .java {
+            color: red;
+        }
+
+        .photoshop {
+            color: orange;
+        }
+
+        .css {
+            color: greenyellow;
+        }
+
+        .blue {
+            width: 80%;
+        }
+
+        .greenyellow {
+            width: 70%;
+        }
+
+        .red {
+            width: 15%;
+        }
+
+        .orange {
+            width: 45%;
+        }
+
+        .grades {
+            border: 1px solid black;
+            background-color: black;
+            border-radius: 15px;
+            padding-left: 15px;
+
+        }
+
+        .grades h1 {
+            text-align: center;
+            color: yellow;
+        }
+        .button{
+            background-color: yellow;
+            width: 150px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .button{
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: yellowgreen;
+            transition-duration: 3s;
+            transform: perspective(uppercase);
+            color: black;
+            font-style: oblique;
+            font-weight: bold;
+            font-display: unset;
+            font: optional;
+            font-stretch: calc(width);
+        }
+      
+
+        .ton {
+            background-color: yellow;
+
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+        }
+
+        .COPY {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container1">
+            <div class="branding">
+                <h1>PORTFOLIO</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</header>
+
+<fieldset class="col">
+    <div class="abut">
+        <fieldset class="field">
+
+            <h3>Profile picture</h3>
+            <img src="WhatsApp Image 2025-02-02 at 22.25.16_1be79231.jpg" alt="" class="phot">
+
+        </fieldset>
+    </div>
+
+    <div class="COPY">
+        <div class="side">
+            <fieldset class="name">
+                <h3 style="color: green;">PERSONAL INFO</h3>
+                <p><span style="color:greenyellow;">name:</span> <span style="color: white;">Muvunyi
+                        patience</span>
+                </p>
+                <p><span style="color: greenyellow;">born:</span><span style="color: white;">29/07/1975</span>
+                </p>
+                <p><span style="color: greenyellow;">country:</span><span style="color: white;">Rwanda</span>
+                </p>
+                <p><span style="color: greenyellow;">city:</span><span style="color: white;">kigali city</span>
+                </p>
+            </fieldset>
+        </div>
+        <fieldset class="set">
+            <h3><span style="color: yellow;"> school</span>background</h3>
+            <p><span style="color: greenyellow;">primary:</span><span style="color: white;">epadr glory
+                    school</span> </p>
+            <p><span style="color: greenyellow;">o'level:</span><span style="color: white;">marie merci
+                    kibeho</span> </p>
+            <p><span style="color: greenyellow;">a'level:</span><span style="color: white;">saint joseph
+                    intergrated
+                    technical college</span></p>
+        </fieldset>
+        <fieldset class="field4">
+            <div class="education">
+                <h3>hobbies</h3>
+                <p><span style="color: greenyellow;">games:</span><span style="color: white;">volleyball</span></p>
+                <h3><span style="color: yellow;">food</span>&drinks</h3>
+                <p><span style="color: white;">water&juice ,</span> <span style="color: white;"> rice&fruits</span>
+                </p>
+            </div>
+        </fieldset>
+
+    </div>
+
+</fieldset>
+    <div class="grades">
+        <h1>progrees bars</h1>
+        <p class="html">html</p>
+        <p style="background-color: green;" class="blue">80%</p>
+        <p class="css">css</p>
+        <p style="background-color: greenyellow;" class="greenyellow">70%</p>
+        <p class="java">java script</p>
+        <p style="background-color: red;" class="red">15%</p>
+        <p class="photoshop">photoshop</p>
+        <p style="background-color: orange;" class="orange">45%</p>
+    </div>
+    <a href="about.html"> <input type="submit" value="explore more" class="button"></a>
+
+
+    <div class="footer"></div>
+    <div style="background: #333; color: wheat; border-bottom-left-radius: 25px;">
+        <div class="flex" style=" display:flex; justify-content: space-around; padding: 20px;">
+            <div>
+                <h3 style="color: yellow;">Contact Info</h3>
+                <p>Email: patience@gmail.com</p>
+                <p>Phone: +250791391106</p>
+            </div>
+            <div>
+                <h3 style="color: yellow;">Social Media</h3>
+                <p><a href="#" style="color: skyblue;"><i class="fab fa-facebook"></i> Facebook</a></p>
+                <p><a href="#" style="color: skyblue;"><i class="fab fa-instagram"></i> Instagram</a></p>
+            </div>
+            <div>
+                <h3 style="color: yellow">Location</h3>
+                <p>243kn St.</p>
+                <p>kigali, rwanda</p>
+            </div>
+        </div>
+        <p class="footer" style="text-align: center;">&copy; 2025 patience | All Rights Reserved</p>
+    </div>
+</body>
+
+</html>

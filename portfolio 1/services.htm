@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: yellow 3px solid;
+        }
+        header a:hover {
+            color: greenyellow;
+            text-decoration: underline;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        .branding {
+            float: left;
+        }
+
+        .branding h1 {
+            margin: 0;
+            color: yellow;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        .main-content {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+
+        .main-content h2 {
+            color: #333;
+        }
+
+        .main-content form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-content form input,
+        .main-content form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .main-content form input[type="submit"] {
+            background: #333;
+            color: #fff;
+            border: 0;
+            cursor: pointer;
+        }
+        .container1 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: none;
+            border-radius: 20px;
+        }
+
+        .photo-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 10px;
+            background-color:none;
+            color: white;
+        }
+
+        .photo-card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .photo-card.content {
+            max-width: 250px;
+        }
+
+        .photo-card p {
+            margin: 5px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .button{
+            background-color: yellow;
+            width: 150px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            
+        }
+        .button{
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: yellowgreen;
+            transition-duration: 3s;
+            color: black;
+            font-style: oblique;
+            font-weight: bold;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <h1>PORTFOLIO</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="home.html">Home</a></li>
+                    <li> <a href="about.html">about</a></li>
+                    <li> <a href="portfolio.html">portfolio</a></li>
+                    <li> <a href="services.htm">services</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <fieldset class="enter">
+        <h1 style="color: green; text-align: center;">services we provide</h1>
+        <div class="container1">
+            <!--column1-->
+            <div class="column">
+                <h3><span style="color: black;">brand </span><span style="color:black;">making</span></h3>
+                <div class="photo-card">
+                    <img src="IMG_20240823_230923_909.JPG" alt="photo1">
+                    <div class="content">
+
+                        <p>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Dolores, doloribus.</p>
+                    </div>
+                </div>
+                <h3><span style="color: black;">graphic </span> <span style="color: black;">design</span></h3>
+                <div class="photo-card">
+                    <img src="IMG_20240823_231002_104.JPG" alt="photo2">
+                    <div class="content">
+
+                        <p>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Incidunt, eveniet!</p>
+                    </div>
+                </div>
+            </div>
+            <!--column2-->
+            <div class="column">
+                <h3><span style="color: black;">content </span><span style="color:black;">creation</span></h3>
+                <div class="photo-card">
+                    <img src="IMG_20240823_230935_801.JPG" alt="photo3">
+                    <div class="content">
+
+                        <p>Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Unde, molestias.</p>
+                    </div>
+                </div>
+                <h3><span style="color: black;">web </span><span style="color:black;">development</span></h3>
+                <div class="photo-card">
+                    <img src="IMG_20240823_231014_102.JPG" alt="photo4">
+                    <div class="content">
+
+                        <p>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nam, laboriosam!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h3><span style="color:black;">web </span><span style="color: black;">design</span></h3>
+                <div class="photo-card">
+
+                    <img src="IMG_20240823_230948_029.JPG" alt="photo3">
+                    <div class="content">
+
+                        <p>Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Unde, molestias.</p>
+                    </div>
+                </div>
+                <h3><span style="color: black;">frontend </span><span style="color: black;">development</span>
+                </h3>
+                <div class="photo-card">
+                    <img src="IMG_20240823_231014_102.JPG" alt="photo4">
+                    <div class="content">
+
+                        <p>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nam, laboriosam!</p>
+                    </div>
+                </div>
+            </div>
+            
+    </fieldset>
+    
+    <a href="about.html"> <input type="submit" value="get in touch" class="button"></a>
+
+    <div class="footer"></div>
+    <div style="background: #333; color: wheat; border-bottom-left-radius: 25px;">
+        <div class="flex" style=" display:flex; justify-content: space-around; padding: 20px;">
+            <div>
+                <h3 style="color: yellow;">Contact Info</h3>
+                <p>Email: patience@gmail.com</p>
+                <p>Phone: +250791391106</p>
+            </div>
+            <div>
+                <h3 style="color: yellow;">Social Media</h3>
+                <p><a href="#" style="color: skyblue;"><i class="fab fa-facebook"></i> Facebook</a></p>
+                <p><a href="#" style="color: skyblue;"><i class="fab fa-instagram"></i> Instagram</a></p>
+            </div>
+            <div>
+                <h3 style="color: yellow">Location</h3>
+                <p>243kn St.</p>
+                <p>kigali, rwanda</p>
+            </div>
+        </div>
+        <p class="footer" style="text-align: center;">&copy; 2025 patience | All Rights Reserved</p>
+    </div>
+</body>
+
+</html>
