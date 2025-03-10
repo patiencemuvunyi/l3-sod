@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Debugging Test</title>
+
+    <!-- Check if GSAP is loaded -->
+    <script>
+        console.log("GSAP Loaded before script:", typeof gsap !== "undefined");
+    </script>
+
+    <!-- Load GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Check GSAP after loading -->
+    <script>
+        console.log("GSAP Loaded after script:", typeof gsap !== "undefined");
+    </script>
+
+    <style>
+        .box {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+        }
+        #pullSystemcontainer { background: red; }
+        #sprayHandcontainer { background: blue; }
+        #sprayer { background: green; }
+        #carContainer { background: yellow; }
+        #scalesContainer { background: purple; }
+    </style>
+</head>
+<body>
+
+    <!-- Boxes for animation -->
+    <div id="pullSystemcontainer" class="box"></div>
+    <div id="sprayHandcontainer" class="box"></div>
+    <div id="sprayer" class="box"></div>
+    <div id="carContainer" class="box"></div>
+    <div id="scalesContainer" class="box"></div>
+
+    <!-- GSAP Animation Script -->
+    <script>
+        function layoutPreparation() {
+            if (typeof gsap === "undefined") {
+                console.error("GSAP is not loaded!");
+                return;
+            }
+
+            gsap.set("#pullSystemcontainer", { x: 375, y: 100 });
+            gsap.set("#sprayHandcontainer", { x: 700, y: 150 });
+            gsap.set("#sprayer", { x: -59.5, y: 200 });
+            gsap.set("#carContainer", { x: 190, y: 250 });
+            gsap.set("#scalesContainer", { x: 170, y: 300 });
+
+            console.log("GSAP animations applied!");
+        }
+
+        document.addEventListener("DOMContentLoaded", layoutPreparation);
+    </script>
+
+</body>
+</html>

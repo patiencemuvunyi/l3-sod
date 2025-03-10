@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kira Clinic - Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Header styles */
+        header {
+            background-color:rgb(8, 177, 8);
+            padding: 10px 0;
+            
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        /* Main content styles */
+        .contact-section {
+            background-color: #2e2e2e;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .contact-section h1 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+        
+        .info-box {
+            background-color: #373737;
+            border-radius: 5px;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .info-box .icon {
+            margin-right: 10px;
+            color: #7ab317;
+            font-size: 20px;
+        }
+        
+        /* Form section styles */
+        .form-section {
+            background-color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .form-section h2 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .form-section p {
+            color: #7ab317;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 5px;
+        }
+        
+        .form-row {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .form-row label {
+            display: block;
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        
+        .form-row input, 
+        .form-row textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        
+        .form-row textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background-color: #0a5d0a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 30px 20px;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .footer-col {
+            margin-bottom: 20px;
+            min-width: 200px;
+        }
+        
+        .footer-col h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .footer-col p {
+            color: #bbb;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .footer-col a {
+            color: #bbb;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .footer-col a:hover {
+            color: #7ab317;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            color: #777;
+            font-size: 12px;
+            border-top: 1px solid #333;
+            margin-top: 20px;
+        }
+        
+        /* Icons */
+        .fa {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .service-link {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .service-link .fa {
+            margin-right: 8px;
+            color: #7ab317;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="kira.png" alt="" style="border-radius: 50%; height: 70px; width: 70px;">
+                Kira Clinic
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Partnership</a></li>
+                    <li><a href="#">Our Doctors</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#" style="text-decoration: underline;">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h1>Contact us</h1>
+        <div class="contact-info">
+            <div class="info-box">
+                <div class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 10.999H22C22 5.869 18.127 2 12.99 2V4C17.052 4 20 6.943 20 10.999Z" fill="#7ab317"/>
+                        <path d="M13 8C15.103 8 16 8.897 16 11H18C18 7.779 16.22 6 13 6V8Z" fill="#7ab317"/>
+                        <path d="M16.422 13.443C15.594 12.613 14.766 11.783 13.939 10.955C13.111 10.126 12.283 9.299 11.453 8.47C11.205 8.221 10.867 8.001 10.518 8.001C10.169 8.001 9.831 8.221 9.582 8.469C9.109 8.941 8.633 9.412 8.156 9.882C7.983 10.053 7.81 10.224 7.637 10.396C7.459 10.572 7.279 10.746 7.101 10.923C6.923 11.1 6.747 11.279 6.573 11.46C6.324 11.718 6.103 12.056 6.103 12.405C6.103 12.754 6.324 13.092 6.572 13.342C7.832 14.603 9.09 15.864 10.354 17.12C10.602 17.367 10.94 17.588 11.289 17.588C11.638 17.588 11.976 17.367 12.225 17.12C12.402 16.943 12.579 16.767 12.755 16.589C12.931 16.413 13.107 16.237 13.284 16.06C13.749 15.589 14.218 15.119 14.686 14.648C14.935 14.399 15.155 14.061 15.155 13.712C15.155 13.364 14.935 13.026 14.686 12.776L16.422 13.443Z" fill="#7ab317"/>
+                        <path d="M15.517 17.143C15.074 17.6 14.531 18 13.991 18.001H13.799C11.78 17.904 9.94 17.002 8.475 15.884L7.281 17.521C9.131 18.945 11.343 19.986 13.827 19.999H14.07C15.144 19.998 16.294 19.302 17.097 18.458C17.506 18.029 17.9 17.579 18.294 17.126L16.839 15.759C16.401 16.237 15.953 16.692 15.517 17.143Z" fill="#7ab317"/>
+                    </svg>
+                </div>
+                Phone
+                <br>+250 788 888 888
+            </div>
+            <div class="info-box">
+                <div class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="#7ab317"/>
+                    </svg>
+                </div>
+                Email
+                <br>info@kiraclinic.com
+            </div>
+            <div class="info-box">
+                <div class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#7ab317"/>
+                    </svg>
+                </div>
+                Location
+                <br>Nyagatare District
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <h2>Love to hear from you,</h2>
+        <p>Let's get in touch!</p>
+        
+        <div class="contact-form">
+            <form action="#" method="post">
+                <div class="form-row">
+                    <label for="name">Your names</label>
+                    <input type="text" id="name" placeholder="Type your full names">
+                </div>
+                
+                <div class="form-row">
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" placeholder="Type your email">
+                </div>
+                
+                <div class="form-row">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Type subject">
+                </div>
+                
+                <div class="form-row">
+                    <label for="message">Your message</label>
+                    <textarea id="message" placeholder="Write your message"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>KIRA CLINIC</h3>
+                <p>Rwanda, Nyagatare District<br>Street KV 267 ST</p>
+                <p>Phone: +250 787 888 888<br>Email: info@kiraclinic.com</p>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <div class="service-link">
+                    <span class="fa">►</span> 
+                    <a href="#">Consultation</a>
+                </div>
+                <div class="service-link">
+                    <span class="fa">►</span> 
+                    <a href="#">Hospital</a>
+                </div>
+                <div class="service-link">
+                    <span class="fa">►</span> 
+                    <a href="#">Dentist</a>
+                </div>
+                <div class="service-link">
+                    <span class="fa">►</span> 
+                    <a href="#">Consultation</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Follow us</h3>
+                <div class="service-link">
+                    <span class="fa">►</span> 
+                    <a href="#">Facebook</a>
+                </div>
+                <div class="service-link">
+                    <span class="fa">►</span> 
+                    <a href="#">Twitter</a>
+                </div>
+                <div class="service-link">
+                    <span class="fa">►</span> 
+                    <a href="#">LinkedIn</a>
+                </div>
+                <div class="service-link">
+                    <span class="fa">►</span> 
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            © 2022 Copyright, Kira Clinic, Ltd.
+        </div>
+    </footer>
+</body>
+</html>

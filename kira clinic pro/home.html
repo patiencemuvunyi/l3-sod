@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kira Clinic</title>
+    <style>
+        header {
+            background-color: rgb(8, 177, 8);
+            color: white;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: right;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #ccc;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+
+        .logo1 {
+            display: flex;
+            align-items: center;
+            margin-left: 1px;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url(dr1.png) no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: -100px;
+        }
+
+        .hero .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            margin: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .green {
+            background: #4c9a2a;
+            color: white;
+        }
+
+        .yellow {
+            background: #f2c40f;
+            color: black;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 30px 20px;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .footer-col {
+            margin-bottom: 20px;
+            min-width: 200px;
+        }
+        
+        .footer-col h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .footer-col p {
+            color: #bbb;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .footer-col a {
+            color: #bbb;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .footer-col a:hover {
+            color: #7ab317;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            color: #777;
+            font-size: 12px;
+            border-top: 1px solid #333;
+            margin-top: 20px;
+        }
+        
+
+
+        .copy {
+            text-align: center;
+            background-color: gray;
+            width: 100%;
+            height: 70px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .services-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .service-item {
+            display: flex;
+            margin-bottom: 60px;
+            align-items: center;
+        }
+
+        .service-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .service-image {
+            flex: 1;
+            max-width: 45%;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .service-content {
+            flex: 1;
+            padding: 0 30px;
+        }
+
+        .service-title {
+            margin-bottom: 10px;
+            font-size: 22px;
+            font-weight: normal;
+        }
+
+        .service-title span {
+            color: #7ab317;
+            font-weight: bold;
+        }
+
+        .service-description {
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+
+            .service-item,
+            .service-item:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .service-image {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .service-content {
+                padding: 0;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo1">
+            <img src="kira.png" alt="logo" class="logo">
+            <h1>Kira Clinic</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Partnership</a></li>
+                <li><a href="#">Our Doctors</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to Kira Clinic</h1>
+            <p>We are a clinic that offers consultation and treats various sicknesses</p>
+            <div class="buttons">
+                <a href="#" class="btn green">Get Started</a>
+                <a href="contact.html" class="btn yellow">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    <section class="services-section">
+        <h2 class="section-title">Our Services</h2>
+
+        <!-- Service Item 1 -->
+        <div class="service-item">
+            <div class="service-image">
+                <img src="dr1.png" alt="Treatment for illness" style="height: 250px;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Treatment for <span>illness</span></h3>
+                <p class="service-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, elementum dolor id tempor. Integer
+                    adipiscing accumsan eget. Pharetra, magna enim tincidunt accumsan ipsum. Integer odio dignissim
+                    quisque pulvinar tellus curabitur eget dictum.
+                </p>
+            </div>
+        </div>
+
+        <!-- Service Item 2 -->
+        <div class="service-item">
+            <div class="service-image">
+                <img src="dr1.png" alt="Basic laboratory" style="height: 250px;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Basic <span>laboratory</span></h3>
+                <p class="service-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, elementum dolor id tempor. Integer
+                    adipiscing accumsan eget. Pharetra, magna enim tincidunt accumsan ipsum. Integer odio dignissim
+                    quisque pulvinar tellus curabitur eget dictum.
+                </p>
+            </div>
+        </div>
+
+        <!-- Service Item 3 -->
+        <div class="service-item">
+            <div class="service-image">
+                <img src="dr1.png" alt="Vaccinations for all" style="height: 250px;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Vaccinations <span>for all</span></h3>
+                <p class="service-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, elementum dolor id tempor. Integer
+                    adipiscing accumsan eget. Pharetra, magna enim tincidunt accumsan ipsum. Integer odio dignissim
+                    quisque pulvinar tellus curabitur eget dictum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>KIRA CLINIC</h3>
+                <p>Rwanda, Nyagatare District<br>Street KV 267 ST</p>
+                <p>Phone: +250 787 888 888<br>Email: info@kiraclinic.com</p>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <div class="service-link">
+                    <span class="fa">►</span> 
+                    <a href="#">Consultation</a>
+                </div>
+                <div class="service-link">
+                    <span class="fa">►</span> 
+                    <a href="#">Hospital</a>
+                </div>
+                <div class="service-link">
+                    <span class="fa">►</span> 
+                    <a href="#">Dentist</a>
+                </div>
+                <div class="service-link">
+                    <span class="fa">►</span> 
+                    <a href="#">Consultation</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Follow us</h3>
+                <div class="service-link">
+                    <span class="fa">►</span> 
+                    <a href="#">Facebook</a>
+                </div>
+                <div class="service-link">
+                    <span class="fa">►</span> 
+                    <a href="#">Twitter</a>
+                </div>
+                <div class="service-link">
+                    <span class="fa">►</span> 
+                    <a href="#">LinkedIn</a>
+                </div>
+                <div class="service-link">
+                    <span class="fa">►</span> 
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            © 2022 Copyright, Kira Clinic, Ltd.
+        </div>
+    </footer>
+</body>
+
+</html>
